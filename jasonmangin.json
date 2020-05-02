@@ -1,0 +1,16 @@
+{
+	"name": "Jason Mangin",
+	"title": "Project",
+	"badge": [
+		"HTML"
+	],
+	"description": "Project description",
+	"installation": "Installation instructions",
+	"usage": "Usage instructions",
+	"credit": "Credited people",
+	"license": [
+		"MIT"
+	],
+	"contributing": "How to add",
+	"tests": "None"
+}
