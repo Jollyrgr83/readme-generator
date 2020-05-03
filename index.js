@@ -1,4 +1,5 @@
 var inquirer = require("inquirer");
+const axios = require("axios");
 var fs = require('fs');
 var generateMarkdown = require("./utils/generateMarkdown");
 
@@ -9,6 +10,12 @@ function init() {
             type: "input",
             name: "name",
             message: "What is your name?"
+        },
+        {
+            // USERNAME
+            type: "input",
+            name: "username",
+            message: "What is your GitHub username?"
         },
         {
             // TITLE
@@ -66,7 +73,7 @@ function init() {
         }
     ]).then(function(data) {
 
-        console.log("data.license", data.license);
+        let username = data.username;
 
         var filename = `${data.title.toLowerCase().split(' ').join('')} readme.md`;
 
